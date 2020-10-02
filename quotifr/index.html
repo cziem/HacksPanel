@@ -5,10 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quotifr | Get fun new quotes everyday</title>
+  <link rel="shortcut icon" href="assets/quote-icon.jpg" type="image/jpg">
+  <link rel="stylesheet" href="styles/styles.css">
+  <!-- <script src="https://use.fontawesome.com/34865a9f8c.js"></script> -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+    integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <div class="quote-container" id="quote-container">
+    <!-- quotes -->
+    <div class="quote-text">
+      <i class="fas fa-quote-left"></i>
+      <span id="quote">What you are is what you have been. What you'll be is what you do now.</span>
+    </div>
 
+    <!-- author -->
+    <div class="quote-author">
+      <span id="author">Buddha</span>
+    </div>
+
+    <!-- buttons -->
+    <div class="button-container">
+      <button class="twitter-button" id="twitter" title="Tweet This!">
+        <i class="fab fa-twitter"></i>
+      </button>
+
+      <button id="new-quote">New Quote</button>
+    </div>
+  </div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader" />
+
+  <!-- scripts -->
+  <script src="lib/js/main.js"></script>
 </body>
 
 </html>
