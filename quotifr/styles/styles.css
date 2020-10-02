@@ -26,7 +26,7 @@ body {
   padding: 20px 30px;
   border-radius: 10px;
   background-color: rgba(225, 225, 225, 0.4);
-  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 7px 6px 2px rgba(0, 0, 0, 0.2), 0 2px 4px 2px rgba(0, 0, 0, 0.2);
 }
 
 .quote-text {
@@ -88,10 +88,14 @@ button:active {
 /* Responsive Media Query: Tablet or Smaller */
 @media screen and (max-width: 1000px) {
   .quote-container {
-    margin: auto 10px;
+    margin: auto 1.5rem;
   }
 
   .quote-text {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+  }
+
+  .button-container {
+    margin-top: 1.8rem;
   }
 }
