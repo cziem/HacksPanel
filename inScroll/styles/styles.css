@@ -34,3 +34,60 @@ h1.title {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Footer Styles */
+/* footer */
+.footer {
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  font-size: 0.675rem;
+  align-items: center;
+  justify-content: center;
+}
+
+footer > p {
+  color: #717171;
+}
+
+a, a:visited {
+  color: #717171;
+  text-decoration: none;
+}
+
+.creator {
+  color: #333 !important;
+}
+
+.creator:hover {
+  color: #717171 !important;
+}
+
+p::after {
+  content: "|";
+  color: #333;
+  padding-left: 10px;
+}
+
+aside.socials {
+  width: 3rem;
+  display: flex;
+  margin-left: 0.5rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.twitter, .twitter:visited,
+.github, .github:visited {
+  color: #717171 ;
+}
+
+.twitter:hover, .github:hover {
+  color: #333;
+}
+
+.fa-twitter, .fa-github {
+  font-size: 0.76rem !important;
+}
