@@ -35,8 +35,16 @@ h1.title {
   transform: translate(-50%, -50%);
 }
 
+/* Image Container */
+.image-container {
+  margin: 10px 20%;
+}
+
+.image-container img {
+  width: 100%;
+}
+
 /* Footer Styles */
-/* footer */
 .footer {
   bottom: 0;
   width: 100vw;
@@ -90,4 +98,15 @@ aside.socials {
 
 .fa-twitter, .fa-github {
   font-size: 0.76rem !important;
+}
+
+/* Media Query: Large Smartphone */
+@media screen and (max-width: 600px) {
+  h1.title {
+    font-size: 2rem;
+  }
+
+  .image-container {
+    margin: 10% 3%;
+  }
 }
