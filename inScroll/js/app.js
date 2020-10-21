@@ -6,9 +6,9 @@ let imagesLoaded = 0;
 let totalImages = 0;
 
 // Unsplash API
-const count = 35;
+let count = 5;
 const API_KEY = '6HL117qqw4aTFpcCjNEwtkCJKk8U6NVGIhiv5kvdMbY';
-const API_URL = `https://api.unsplash.com/photos/random/?client_id=${API_KEY}&count=${count}
+let API_URL = `https://api.unsplash.com/photos/random/?client_id=${API_KEY}&count=${count}
 `;
 
 // Check if all images were loaded
@@ -17,7 +17,10 @@ function imageLoaded() {
 
   if (imagesLoaded === totalImages) {
     ready = true;
-    loader.hidden = true
+    loader.hidden = true;
+    count = 30;
+    API_URL = `https://api.unsplash.com/photos/random/?client_id=${API_KEY}&count=${count}
+`;
   }
 }
 
